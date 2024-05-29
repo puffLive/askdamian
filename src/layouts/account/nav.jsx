@@ -1,52 +1,52 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import Link from '@mui/material/Link';
-import Stack from '@mui/material/Stack';
-import Drawer from '@mui/material/Drawer';
-import Avatar from '@mui/material/Avatar';
-import Divider from '@mui/material/Divider';
-import { alpha } from '@mui/material/styles';
-import ListItemText from '@mui/material/ListItemText';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemButton from '@mui/material/ListItemButton';
+import Link from "@mui/material/Link";
+import Stack from "@mui/material/Stack";
+import Drawer from "@mui/material/Drawer";
+import Avatar from "@mui/material/Avatar";
+import Divider from "@mui/material/Divider";
+import { alpha } from "@mui/material/styles";
+import ListItemText from "@mui/material/ListItemText";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemButton from "@mui/material/ListItemButton";
 
-import { paths } from 'src/routes/paths';
-import { useActiveLink } from 'src/routes/hooks';
-import { RouterLink } from 'src/routes/components';
+import { paths } from "src/routes/paths";
+import { useActiveLink } from "src/routes/hooks";
+import { RouterLink } from "src/routes/components";
 
-import { useResponsive } from 'src/hooks/use-responsive';
+import { useResponsive } from "src/hooks/use-responsive";
 
-import { _mock } from 'src/_mock';
+import { _mock } from "src/_mock";
 
-import Iconify from 'src/components/iconify';
-import TextMaxLine from 'src/components/text-max-line';
+import Iconify from "src/components/iconify";
+import TextMaxLine from "src/components/text-max-line";
 
 // ----------------------------------------------------------------------
 
 const navigations = [
   {
-    title: 'Personal Info',
-    path: paths.eCommerce.account.personal,
+    title: "Personal Info",
+    path: paths.servicers,
     icon: <Iconify icon="carbon:user" />,
   },
   {
-    title: 'Wishlist',
-    path: paths.eCommerce.account.wishlist,
+    title: "Wishlist",
+    path: paths.servicers,
     icon: <Iconify icon="carbon:favorite" />,
   },
   {
-    title: 'Vouchers',
-    path: paths.eCommerce.account.vouchers,
+    title: "Vouchers",
+    path: paths.servicers,
     icon: <Iconify icon="carbon:cut-out" />,
   },
   {
-    title: 'Orders',
-    path: paths.eCommerce.account.orders,
+    title: "Orders",
+    path: paths.servicers,
     icon: <Iconify icon="carbon:document" />,
   },
   {
-    title: 'Payment',
-    path: paths.eCommerce.account.payment,
+    title: "Payment",
+    path: paths.services,
     icon: <Iconify icon="carbon:purchase" />,
   },
 ];
@@ -54,7 +54,7 @@ const navigations = [
 // ----------------------------------------------------------------------
 
 export default function Nav({ open, onClose }) {
-  const mdUp = useResponsive('up', 'md');
+  const mdUp = useResponsive("up", "md");
 
   const renderContent = (
     <Stack
@@ -64,7 +64,8 @@ export default function Nav({ open, onClose }) {
         width: 1,
         ...(mdUp && {
           width: 280,
-          border: (theme) => `solid 1px ${alpha(theme.palette.grey[500], 0.24)}`,
+          border: (theme) =>
+            `solid 1px ${alpha(theme.palette.grey[500], 0.24)}`,
         }),
       }}
     >
@@ -75,9 +76,9 @@ export default function Nav({ open, onClose }) {
             direction="row"
             alignItems="center"
             sx={{
-              typography: 'caption',
-              cursor: 'pointer',
-              '&:hover': { opacity: 0.72 },
+              typography: "caption",
+              cursor: "pointer",
+              "&:hover": { opacity: 0.72 },
             }}
           >
             <Iconify icon="carbon:edit" sx={{ mr: 1 }} />
@@ -89,13 +90,17 @@ export default function Nav({ open, onClose }) {
           <TextMaxLine variant="subtitle1" line={1}>
             Jayvion Simon
           </TextMaxLine>
-          <TextMaxLine variant="body2" line={1} sx={{ color: 'text.secondary' }}>
+          <TextMaxLine
+            variant="body2"
+            line={1}
+            sx={{ color: "text.secondary" }}
+          >
             nannie_abernathy70@yahoo.com
           </TextMaxLine>
         </Stack>
       </Stack>
 
-      <Divider sx={{ borderStyle: 'dashed' }} />
+      <Divider sx={{ borderStyle: "dashed" }} />
 
       <Stack sx={{ my: 1, px: 2 }}>
         {navigations.map((item) => (
@@ -103,7 +108,7 @@ export default function Nav({ open, onClose }) {
         ))}
       </Stack>
 
-      <Divider sx={{ borderStyle: 'dashed' }} />
+      <Divider sx={{ borderStyle: "dashed" }} />
 
       <Stack sx={{ my: 1, px: 2 }}>
         <ListItemButton
@@ -119,7 +124,7 @@ export default function Nav({ open, onClose }) {
           <ListItemText
             primary="Logout"
             primaryTypographyProps={{
-              typography: 'body2',
+              typography: "body2",
             }}
           />
         </ListItemButton>
@@ -163,7 +168,7 @@ function NavItem({ item }) {
       component={RouterLink}
       key={item.title}
       href={item.path}
-      color={active ? 'primary' : 'inherit'}
+      color={active ? "primary" : "inherit"}
       underline="none"
     >
       <ListItemButton
@@ -177,9 +182,9 @@ function NavItem({ item }) {
         <ListItemText
           primary={item.title}
           primaryTypographyProps={{
-            typography: 'body2',
+            typography: "body2",
             ...(active && {
-              typography: 'subtitle2',
+              typography: "subtitle2",
             }),
           }}
         />
