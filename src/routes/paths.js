@@ -4,7 +4,6 @@ export const paths = {
   // Services
   services: {
     root: "/services",
-    services: "/services/services",
     businesses: "/services/businesses",
     pension: "/services/pension",
     families: "/services/families",
@@ -12,6 +11,5 @@ export const paths = {
     estatePlanning: "/services/estatePlanning",
   },
   // Others
-  services: "/services",
   contactus: "/contactus",
 };

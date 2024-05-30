@@ -63,7 +63,7 @@ export default function NavMobile({ data }) {
               fullWidth
               variant="contained"
               color="inherit"
-              href={paths.services}
+              href={paths.services.root}
               target="_blank"
               rel="noopener"
             >
