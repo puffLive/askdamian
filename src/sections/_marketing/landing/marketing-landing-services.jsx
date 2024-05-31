@@ -1,47 +1,47 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import Stack from '@mui/material/Stack';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
+import Box from "@mui/material/Box";
+import Card from "@mui/material/Card";
+import Stack from "@mui/material/Stack";
+import Container from "@mui/material/Container";
+import Typography from "@mui/material/Typography";
+import IconButton from "@mui/material/IconButton";
 
-import { paths } from 'src/routes/paths';
-import { RouterLink } from 'src/routes/components';
+import { paths } from "src/routes/paths";
+import { RouterLink } from "src/routes/components";
 
-import Iconify from 'src/components/iconify';
-import SvgColor from 'src/components/svg-color';
-import TextMaxLine from 'src/components/text-max-line';
+import Iconify from "src/components/iconify";
+import SvgColor from "src/components/svg-color";
+import TextMaxLine from "src/components/text-max-line";
 
 // ----------------------------------------------------------------------
 
-const COLORS = ['primary', 'secondary', 'success', 'warning'];
+const COLORS = ["primary", "secondary", "success", "warning"];
 
 const SERVICES = [
   {
-    name: 'SEO',
-    icon: '/assets/icons/service/ic_service_seo.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: "Family",
+    icon: "/assets/icons/service/ic_service_seo.svg",
+    content: "Preserving your family's wealth is our top priority",
+    path: paths.services.root,
   },
   {
-    name: 'Email Marketing',
-    icon: '/assets/icons/service/ic_service_mail.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: "Pension",
+    icon: "/assets/icons/service/ic_service_mail.svg",
+    content: "Understanding pensions",
+    path: paths.services.root,
   },
   {
-    name: 'Search Engine Oprimization',
-    icon: '/assets/icons/service/ic_service_analysis.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: "Business",
+    icon: "/assets/icons/service/ic_service_analysis.svg",
+    content: "we understand the unique challenges and opportunities",
+    path: paths.services.root,
   },
   {
-    name: 'Social Marketing',
-    icon: '/assets/icons/service/ic_service_bullhorn.svg',
-    content: 'Nunc nonummy metus. Donec elit libero',
-    path: paths.marketing.services,
+    name: "Financial Planning ",
+    icon: "/assets/icons/service/ic_service_bullhorn.svg",
+    content: "In-depth financial planning",
+    path: paths.services.root,
   },
 ];
 
@@ -59,30 +59,30 @@ export default function MarketingLandingServices() {
         sx={{
           maxWidth: 480,
           mb: { xs: 8, md: 5 },
-          mx: { xs: 'auto', md: 'unset' },
-          textAlign: { xs: 'center', md: 'unset' },
+          mx: { xs: "auto", md: "unset" },
+          textAlign: { xs: "center", md: "unset" },
         }}
       >
-        <Typography variant="overline" sx={{ color: 'text.disabled' }}>
+        <Typography variant="overline" sx={{ color: "text.disabled" }}>
           Our Services
         </Typography>
 
         <Typography variant="h2">We Provide</Typography>
 
-        <Typography sx={{ color: 'text.secondary' }}>
-          Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a, suscipit non, turpis.
+        <Typography sx={{ color: "text.secondary" }}>
+          We provide a many different services many different needs.
         </Typography>
       </Stack>
 
       <Box
         sx={{
           gap: 4,
-          display: 'grid',
-          alignItems: 'center',
+          display: "grid",
+          alignItems: "center",
           gridTemplateColumns: {
-            xs: 'repeat(1, 1fr)',
-            sm: 'repeat(2, 1fr)',
-            md: 'repeat(4, 1fr)',
+            xs: "repeat(1, 1fr)",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(4, 1fr)",
           },
         }}
       >
@@ -104,7 +104,7 @@ function ServiceItem({ service, index }) {
       sx={{
         px: 4,
         py: 5,
-        textAlign: 'center',
+        textAlign: "center",
         ...(index === 1 && {
           py: { xs: 5, md: 8 },
         }),
@@ -119,14 +119,14 @@ function ServiceItem({ service, index }) {
         sx={{
           width: 88,
           height: 88,
-          mx: 'auto',
+          mx: "auto",
           color: (theme) => theme.palette[COLORS[index]].main,
         }}
       />
 
       <Stack spacing={1} sx={{ my: 5 }}>
         <TextMaxLine variant="h6">{name}</TextMaxLine>
-        <TextMaxLine variant="body2" sx={{ color: 'text.secondary' }}>
+        <TextMaxLine variant="body2" sx={{ color: "text.secondary" }}>
           {content}
         </TextMaxLine>
       </Stack>
@@ -135,10 +135,10 @@ function ServiceItem({ service, index }) {
         component={RouterLink}
         href={path}
         color={
-          (index === 0 && 'primary') ||
-          (index === 1 && 'secondary') ||
-          (index === 2 && 'success') ||
-          'warning'
+          (index === 0 && "primary") ||
+          (index === 1 && "secondary") ||
+          (index === 2 && "success") ||
+          "warning"
         }
       >
         <Iconify icon="carbon:direction-straight-right" />

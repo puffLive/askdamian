@@ -22,7 +22,7 @@ export const navConfig = [
   { title: "Home", path: "/" },
   {
     title: "Services",
-    path: paths.services,
+    path: paths.services.root,
     children: [pageLinks[0]],
   },
   { title: "Contact Us", path: paths.contactus },

@@ -64,14 +64,14 @@ export default function Header({ headerOnDark }) {
         <Button
           variant="contained"
           color="inherit"
-          href={paths.zoneStore}
+          href={paths.services.root}
           target="_blank"
           rel="noopener"
           sx={{
             display: { xs: "none", md: "inline-flex" },
           }}
         >
-          Free Consultaion
+          Free Consultation
         </Button>
       </Stack>
 
