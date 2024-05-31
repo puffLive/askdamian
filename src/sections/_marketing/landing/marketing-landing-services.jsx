@@ -20,27 +20,27 @@ const COLORS = ["primary", "secondary", "success", "warning"];
 
 const SERVICES = [
   {
-    name: "SEO",
+    name: "Family",
     icon: "/assets/icons/service/ic_service_seo.svg",
-    content: "Nunc nonummy metus. Donec elit libero",
+    content: "Preserving your family's wealth is our top priority",
     path: paths.services.root,
   },
   {
-    name: "Email Marketing",
+    name: "Pension",
     icon: "/assets/icons/service/ic_service_mail.svg",
-    content: "Nunc nonummy metus. Donec elit libero",
+    content: "Understanding pensions",
     path: paths.services.root,
   },
   {
-    name: "Search Engine Oprimization",
+    name: "Business",
     icon: "/assets/icons/service/ic_service_analysis.svg",
-    content: "Nunc nonummy metus. Donec elit libero",
+    content: "we understand the unique challenges and opportunities",
     path: paths.services.root,
   },
   {
-    name: "Social Marketing",
+    name: "Financial Planning ",
     icon: "/assets/icons/service/ic_service_bullhorn.svg",
-    content: "Nunc nonummy metus. Donec elit libero",
+    content: "In-depth financial planning",
     path: paths.services.root,
   },
 ];
@@ -70,8 +70,7 @@ export default function MarketingLandingServices() {
         <Typography variant="h2">We Provide</Typography>
 
         <Typography sx={{ color: "text.secondary" }}>
-          Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a,
-          suscipit non, turpis.
+          We provide a many different services many different needs.
         </Typography>
       </Stack>
 
