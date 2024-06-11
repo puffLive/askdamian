@@ -18,6 +18,7 @@ import Scrollbar from "src/components/scrollbar";
 
 import NavList from "./nav-list";
 import { NAV } from "../../../config-layout";
+import { HashLink } from "react-router-hash-link";
 
 // ----------------------------------------------------------------------
 
@@ -60,12 +61,15 @@ export default function NavMobile({ data }) {
 
           <Stack spacing={1.5} sx={{ p: 3 }}>
             <Button
+              component={HashLink}
               fullWidth
               variant="contained"
               color="inherit"
               href={paths.services.root}
-              target="_blank"
               rel="noopener"
+              onClick={mobileOpen.onFalse}
+              to="#join"
+              smooth
             >
               Free Consultation
             </Button>
