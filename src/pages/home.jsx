@@ -8,7 +8,7 @@ export default function HomePage() {
   return (
     <>
       <Helmet>
-        <title> Legacy Wealth Advisory</title>
+        <title>Legacy Wealth Advisory</title>
       </Helmet>
 
       <MarketingLandingPage />
