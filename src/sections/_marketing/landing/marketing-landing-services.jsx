@@ -7,12 +7,10 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 
-import { paths } from "src/routes/paths";
-import { RouterLink } from "src/routes/components";
-
 import Iconify from "src/components/iconify";
 import SvgColor from "src/components/svg-color";
 import TextMaxLine from "src/components/text-max-line";
+import { HashLink } from "react-router-hash-link";
 
 // ----------------------------------------------------------------------
 
@@ -23,25 +21,25 @@ const SERVICES = [
     name: "Family",
     icon: "/assets/icons/service/ic_service_seo.svg",
     content: "Preserving your family's wealth is our top priority",
-    path: paths.services.root,
+    path: "#family",
   },
   {
     name: "Pension",
     icon: "/assets/icons/service/ic_service_mail.svg",
     content: "Understanding pensions",
-    path: paths.services.root,
+    path: "#pension",
   },
   {
     name: "Business",
     icon: "/assets/icons/service/ic_service_analysis.svg",
     content: "we understand the unique challenges and opportunities",
-    path: paths.services.root,
+    path: "#business",
   },
   {
     name: "Financial Planning ",
     icon: "/assets/icons/service/ic_service_bullhorn.svg",
     content: "In-depth financial planning",
-    path: paths.services.root,
+    path: "#financial-planning",
   },
 ];
 
@@ -53,6 +51,7 @@ export default function MarketingLandingServices() {
       sx={{
         py: { xs: 5, md: 10 },
       }}
+      id="services"
     >
       <Stack
         spacing={3}
@@ -70,7 +69,7 @@ export default function MarketingLandingServices() {
         <Typography variant="h2">We Provide</Typography>
 
         <Typography sx={{ color: "text.secondary" }}>
-          We provide a many different services many different needs.
+          We provide a many different services for many different needs.
         </Typography>
       </Stack>
 
@@ -132,8 +131,9 @@ function ServiceItem({ service, index }) {
       </Stack>
 
       <IconButton
-        component={RouterLink}
-        href={path}
+        component={HashLink}
+        to={path}
+        smooth
         color={
           (index === 0 && "primary") ||
           (index === 1 && "secondary") ||

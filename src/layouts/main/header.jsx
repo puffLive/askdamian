@@ -17,13 +17,13 @@ import { useResponsive } from "src/hooks/use-responsive";
 import { bgBlur } from "src/theme/css";
 
 import Logo from "src/components/logo";
-import Label from "src/components/label";
 
 import NavMobile from "./nav/mobile";
 import NavDesktop from "./nav/desktop";
 import { HEADER } from "../config-layout";
 import { navConfig } from "./config-navigation";
 import HeaderShadow from "../common/header-shadow";
+import { HashLink } from "react-router-hash-link";
 
 // ----------------------------------------------------------------------
 
@@ -62,14 +62,16 @@ export default function Header({ headerOnDark }) {
         justifyContent="flex-end"
       >
         <Button
+          component={HashLink}
           variant="contained"
           color="inherit"
           href={paths.services.root}
-          target="_blank"
           rel="noopener"
           sx={{
             display: { xs: "none", md: "inline-flex" },
           }}
+          to="#join"
+          smooth
         >
           Free Consultation
         </Button>

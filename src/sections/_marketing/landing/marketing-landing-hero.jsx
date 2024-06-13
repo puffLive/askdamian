@@ -7,6 +7,8 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import { alpha, useTheme } from "@mui/material/styles";
 
+import { HashLink } from "react-router-hash-link";
+
 import { useResponsive } from "src/hooks/use-responsive";
 
 import { bgGradient } from "src/theme/css";
@@ -68,14 +70,24 @@ export default function MarketingLandingHero() {
               justifyContent={{ xs: "center", md: "unset" }}
               sx={{ mt: 5 }}
             >
-              <Button variant="contained" color="inherit" size="large">
+              <Button
+                component={HashLink}
+                variant="contained"
+                color="inherit"
+                size="large"
+                to="#join"
+                smooth
+              >
                 Free Consultation
               </Button>
 
               <Stack
+                component={HashLink}
                 direction="row"
                 alignItems="center"
                 sx={{ typography: "h6" }}
+                to="#services"
+                smooth
               >
                 <Fab size="medium" sx={{ mr: 1 }}>
                   <Iconify width={24} icon="carbon:play" />
