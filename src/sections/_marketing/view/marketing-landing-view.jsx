@@ -20,13 +20,16 @@ import BlogMarketingLatestPosts from "../../blog/marketing/marketing-latest-post
 import MarketingLandingCaseStudies from "../landing/marketing-landing-case-studies";
 import { PARTNERS } from "src/assets/data/partnerLogos";
 import MarketingLandingServicesHowItWork from "../landing/marketing-landing- services-how-it-work";
+import MarketingServicesInclude from "../landing/marketing-landing-services-include";
+import MarketingServicesBenefits from "../landing/marketing-landing-services-benefits";
+import MarketingAboutStory from "../landing/marketing-landing-about-story";
 
 // ----------------------------------------------------------------------
 
 const realMembers = [
   {
     id: 1,
-    role: "CEO",
+    role: "Financial Advisor",
     name: "Damian Alexander",
     photo: `/assets/images/portrait/damian-alexander_profile-image.jpeg`,
     socialLinks: {
@@ -53,6 +56,12 @@ export default function MarketingLandingView() {
 
       <MarketingLandingServicesHowItWork />
 
+      <MarketingServicesInclude />
+
+      <MarketingServicesBenefits />
+
+      <MarketingAboutStory />
+
       {/* <MarketingLandingProcess /> */}
 
       <MarketingLandingCaseStudies caseStudies={_caseStudies.slice(-6)} />
@@ -69,7 +78,7 @@ export default function MarketingLandingView() {
 
       <MarketingLandingFreeSEO />
 
-      <MarketingNewsletter />
+      {/* <MarketingNewsletter /> */}
     </>
   );
 }

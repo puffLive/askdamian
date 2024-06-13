@@ -89,10 +89,23 @@ export default function MarketingLandingFreeSEO() {
               justifyContent={{ xs: "center", md: "flex-start" }}
               sx={{ color: "common.white", mb: 2 }}
             >
-              <Iconify icon="carbon:email" width={24} sx={{ mr: 2 }} />
+              <Iconify icon="carbon:email" width={15} sx={{ mr: 2 }} />
 
               <Link color="inherit" href="mailto:hello@example.com">
-                hello@example.com
+                damian.alexander@cartewm.com
+              </Link>
+            </Stack>
+
+            <Stack
+              direction="row"
+              alignItems="center"
+              justifyContent={{ xs: "center", md: "flex-start" }}
+              sx={{ color: "common.white", mb: 2 }}
+            >
+              <Iconify icon="carbon:phone" width={15} sx={{ mr: 2 }} />
+
+              <Link color="inherit" href="mailto:hello@example.com">
+                (416) 471-3766
               </Link>
             </Stack>
 
@@ -103,7 +116,8 @@ export default function MarketingLandingFreeSEO() {
               sx={{ color: "common.white" }}
             >
               <Iconify icon="carbon:location" width={24} sx={{ mr: 2 }} />
-              508 Bridle Avenue Newnan, GA 30263
+              2680 Skymark Avenue Mississauga, ON L4W, Unit # 1000 Mississauga,
+              Ontario L4W 5L6, Canada
             </Stack>
           </Grid>
 

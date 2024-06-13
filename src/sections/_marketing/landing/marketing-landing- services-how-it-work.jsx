@@ -67,6 +67,7 @@ export default function MarketingLandingServicesHowItWork() {
         color: "common.white",
         py: { xs: 10, md: 15 },
       }}
+      id="business"
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: "center" }}>

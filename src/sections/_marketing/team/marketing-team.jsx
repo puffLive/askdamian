@@ -86,17 +86,20 @@ export default function MarketingTeam({ members }) {
               spacing={3}
               sx={{ textAlign: { xs: "center", md: "unset" } }}
             >
-              <Typography variant="overline" sx={{ color: "grey.600" }}>
+              {/* <Typography variant="overline" sx={{ color: "grey.600" }}>
                 Team
-              </Typography>
+              </Typography> */}
 
               <Typography variant="h2" sx={{ color: "primary.main" }}>
-                Meet Our Team
+                Get to know your financial advisor
               </Typography>
 
               <Typography sx={{ color: "common.white" }}>
-                Since wire-frame renderings are relatively simple and fast to
-                calculate, they are often used in cases
+                I am a licensed Financial Advisor with over two decades of
+                experience. I offer personalized financial plans tailored to
+                your goals, whether buying your first home or planning
+                retirement. We'll continually review and adjust your plan to
+                ensure it meets your evolving needs and aspirations.
               </Typography>
             </Stack>
           </Grid>
@@ -106,7 +109,7 @@ export default function MarketingTeam({ members }) {
           </Grid>
         </Grid>
 
-        {mdUp && (
+        {/* {mdUp && (
           <CarouselArrows
             spacing={2}
             onNext={carousel.onNext}
@@ -121,7 +124,7 @@ export default function MarketingTeam({ members }) {
             }}
             sx={{ position: "absolute", bottom: 0 }}
           />
-        )}
+        )} */}
       </Container>
 
       <Box
