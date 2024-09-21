@@ -42,8 +42,6 @@ const realMembers = [
 ];
 
 export default function MarketingLandingView() {
-  console.log("PARTNERS", PARTNERS);
-  console.log("_brands", _brands);
   return (
     <>
       <MarketingLandingHero />

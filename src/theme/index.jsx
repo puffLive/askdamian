@@ -1,18 +1,21 @@
-import { useMemo } from 'react';
-import PropTypes from 'prop-types';
+import { useMemo } from "react";
+import PropTypes from "prop-types";
 
-import CssBaseline from '@mui/material/CssBaseline';
-import { createTheme, ThemeProvider as MuiThemeProvider } from '@mui/material/styles';
+import CssBaseline from "@mui/material/CssBaseline";
+import {
+  createTheme,
+  ThemeProvider as MuiThemeProvider,
+} from "@mui/material/styles";
 
-import { useSettingsContext } from 'src/components/settings';
+import { useSettingsContext } from "src/components/settings";
 
-import { palette } from './palette';
-import { shadows } from './shadows';
-import { typography } from './typography';
-import RTL from './options/right-to-left';
-import { customShadows } from './custom-shadows';
-import { createPresets } from './options/presets';
-import { componentsOverrides } from './overrides';
+import { palette } from "./palette";
+import { shadows } from "./shadows";
+import { typography } from "./typography";
+import RTL from "./options/right-to-left";
+import { customShadows } from "./custom-shadows";
+import { createPresets } from "./options/presets";
+import { componentsOverrides } from "./overrides";
 
 // ----------------------------------------------------------------------
 
@@ -36,12 +39,19 @@ export default function ThemeProvider({ children }) {
       shape: { borderRadius: 8 },
       typography,
     }),
-    [settings.themeMode, settings.themeDirection, presets.palette, presets.customShadows]
+    [
+      settings.themeMode,
+      settings.themeDirection,
+      presets.palette,
+      presets.customShadows,
+    ]
   );
 
   const theme = createTheme(memoizedValue);
 
   theme.components = componentsOverrides(theme);
+
+  console.log("Theme", theme);
 
   return (
     <MuiThemeProvider theme={theme}>
