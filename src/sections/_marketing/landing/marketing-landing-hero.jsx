@@ -50,17 +50,16 @@ export default function MarketingLandingHero() {
               textAlign: { xs: "center", md: "left" },
             }}
           >
-            <Typography variant="overline" sx={{ color: "secondary.main" }}>
+            <Typography variant="overline" sx={{ color: "primary.light" }}>
               Financial Services
             </Typography>
 
             <Typography variant="h1" sx={{ my: 3 }}>
-              Plan your Financial Future
+              Welcome to Legacy Wealth Advisory
             </Typography>
 
             <Typography sx={{ color: "text.secondary" }}>
-              Guiding Your Financial Future with Trust, Expertise, and
-              Personalized Solutions. Your Success is Our Priority.
+              Step into a New Era of Estate and Succession Planning
             </Typography>
 
             <Stack
@@ -89,7 +88,7 @@ export default function MarketingLandingHero() {
                 to="#services"
                 smooth
               >
-                <Fab size="medium" sx={{ mr: 1 }}>
+                <Fab size="medium" sx={{ mr: 1 }} color="secondary">
                   <Iconify width={24} icon="carbon:play" />
                 </Fab>
                 Our Services

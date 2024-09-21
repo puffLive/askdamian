@@ -64,11 +64,16 @@ export default function Header({ headerOnDark }) {
         <Button
           component={HashLink}
           variant="contained"
-          color="inherit"
+          // color="secondary"
           href={paths.services.root}
           rel="noopener"
           sx={{
             display: { xs: "none", md: "inline-flex" },
+            backgroundColor: "primary.lighter",
+            color: "grey.700",
+            "&:hover": {
+              backgroundColor: "primary.light",
+            },
           }}
           to="#join"
           smooth
@@ -90,6 +95,10 @@ export default function Header({ headerOnDark }) {
             xs: HEADER.H_MOBILE,
             md: HEADER.H_DESKTOP,
           },
+          // backgroundColor: "#0c0c88",
+          // backgroundColor: theme.palette.background.header,
+          backgroundColor: "background.header",
+          color: "text.headerText",
           transition: theme.transitions.create(["height", "background-color"], {
             easing: theme.transitions.easing.easeInOut,
             duration: theme.transitions.duration.shorter,
@@ -99,7 +108,8 @@ export default function Header({ headerOnDark }) {
           }),
           ...(offset && {
             ...bgBlur({ color: theme.palette.background.default }),
-            color: "text.primary",
+            color: "text.headerText",
+            backgroundColor: "background.header",
             height: {
               md: HEADER.H_DESKTOP - 16,
             },
