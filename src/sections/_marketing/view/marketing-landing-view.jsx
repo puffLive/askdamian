@@ -29,7 +29,7 @@ import MarketingAboutStory from "../landing/marketing-landing-about-story";
 const realMembers = [
   {
     id: 1,
-    role: "Financial Advisor",
+    role: "Wealth Management Advisor / Chartered Life Underwriter",
     name: "Damian Alexander",
     photo: `/assets/images/portrait/damian-alexander_profile-image.jpeg`,
     socialLinks: {
