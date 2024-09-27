@@ -48,7 +48,7 @@ export default function MarketingLandingView() {
 
       <MarketingOurClients brands={PARTNERS} />
 
-      <MarketingLandingAbout />
+      {/* <MarketingLandingAbout /> */}
 
       <MarketingLandingServices />
 
@@ -62,19 +62,19 @@ export default function MarketingLandingView() {
 
       {/* <MarketingLandingProcess /> */}
 
-      <MarketingLandingCaseStudies caseStudies={_caseStudies.slice(-6)} />
+      {/* <MarketingLandingCaseStudies caseStudies={_caseStudies.slice(-6)} /> */}
 
       <MarketingTeam members={realMembers} />
 
       {/* <PricingMarketing plans={_pricingMarketing} /> */}
 
-      <MarketingLandingFaqs />
+      {/* <MarketingLandingFaqs /> */}
 
-      <MarketingTestimonial testimonials={_testimonials} />
+      {/* <MarketingTestimonial testimonials={_testimonials} /> */}
 
-      <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} />
+      {/* <BlogMarketingLatestPosts posts={_marketingPosts.slice(0, 4)} /> */}
 
-      <MarketingLandingFreeSEO />
+      {/* <MarketingLandingFreeSEO /> */}
 
       {/* <MarketingNewsletter /> */}
     </>

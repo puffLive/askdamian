@@ -70,11 +70,13 @@ export default function MarketingLandingHero() {
               sx={{ mt: 5 }}
             >
               <Button
-                component={HashLink}
+                // component={HashLink}
+                href="https://calendly.com/planningwithdamian/30minwithdamian"
+                target="_blank"
                 variant="contained"
                 color="inherit"
                 size="large"
-                to="#join"
+                // to="#join"
                 smooth
               >
                 Free Consultation

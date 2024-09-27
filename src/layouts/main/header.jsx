@@ -49,7 +49,7 @@ export default function Header({ headerOnDark }) {
             display: { xs: "none", md: "flex" },
           }}
         >
-          <NavDesktop data={navConfig} />
+          {/* <NavDesktop data={navConfig} /> */}
         </Stack>
 
         <Box sx={{ flexGrow: { xs: 1, md: "unset" } }} />
@@ -62,10 +62,12 @@ export default function Header({ headerOnDark }) {
         justifyContent="flex-end"
       >
         <Button
-          component={HashLink}
+          // component={HashLink}
           variant="contained"
           // color="secondary"
-          href={paths.services.root}
+          // href={paths.services.root}
+          href="https://calendly.com/planningwithdamian/30minwithdamian"
+          target="_blank"
           rel="noopener"
           sx={{
             display: { xs: "none", md: "inline-flex" },
@@ -75,7 +77,7 @@ export default function Header({ headerOnDark }) {
               backgroundColor: "primary.light",
             },
           }}
-          to="#join"
+          // to="#join"
           smooth
         >
           Free Consultation
@@ -95,8 +97,6 @@ export default function Header({ headerOnDark }) {
             xs: HEADER.H_MOBILE,
             md: HEADER.H_DESKTOP,
           },
-          // backgroundColor: "#0c0c88",
-          // backgroundColor: theme.palette.background.header,
           backgroundColor: "background.header",
           color: "text.headerText",
           transition: theme.transitions.create(["height", "background-color"], {
