@@ -32,11 +32,11 @@ const SERVICES = [
   {
     name: "Business",
     icon: "/assets/icons/service/ic_service_analysis.svg",
-    content: "we understand the unique challenges and opportunities",
+    content: "We understand the unique challenges and opportunities",
     path: "#business",
   },
   {
-    name: "Financial Planning ",
+    name: "Estate Planning ",
     icon: "/assets/icons/service/ic_service_bullhorn.svg",
     content: "In-depth financial planning",
     path: "#financial-planning",

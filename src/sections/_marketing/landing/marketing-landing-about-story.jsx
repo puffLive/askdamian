@@ -119,7 +119,7 @@ export default function MarketingAboutStory() {
             mb: { xs: 8, md: 10 },
           }}
         >
-          <Typography variant="h2">Financial Planning </Typography>
+          <Typography variant="h2">Estate Planning </Typography>
 
           <Typography sx={{ color: "text.secondary" }}>
             Our In-depth Financial Planning Process Our financial planning
