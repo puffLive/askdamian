@@ -31,6 +31,7 @@ export default function MarketingLandingHero() {
           imgUrl: "/assets/background/overlay_1.jpg",
         }),
         overflow: "hidden",
+        mt: 15,
       }}
     >
       <Container
