@@ -57,7 +57,9 @@ export default function MarketingServicesInclude() {
       }}
       id="family"
     >
-      <Typography variant="h2">Family Wealth Preservation</Typography>
+      <Typography variant="h2" sx={{ mt: 15 }}>
+        Family Wealth Preservation
+      </Typography>
 
       <Typography
         sx={{
