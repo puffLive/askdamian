@@ -64,6 +64,38 @@ export default function Footer() {
       <Logo single />
 
       <Typography
+        variant="body1"
+        component="div"
+        sx={{ color: "text.primary" }}
+      >
+        Legacy Wealth Advisory
+      </Typography>
+
+      <Typography
+        variant="body2"
+        component="div"
+        sx={{ color: "text.primary" }}
+      >
+        14-30 Eglinton Ave W, Mississauga, ON L5R 0C1
+      </Typography>
+
+      <Typography
+        variant="body2"
+        component="div"
+        sx={{ color: "text.primary" }}
+      >
+        Cell: 416-471-3766 | Office: 905-840-2222
+      </Typography>
+
+      <Typography
+        variant="body2"
+        component="div"
+        sx={{ color: "text.primary" }}
+      >
+        Email: damian@legacywealthadvisory.ca
+      </Typography>
+
+      <Typography
         variant="caption"
         component="div"
         sx={{ color: "text.secondary" }}
