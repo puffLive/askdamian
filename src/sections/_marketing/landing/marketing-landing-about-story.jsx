@@ -117,6 +117,7 @@ export default function MarketingAboutStory() {
             mx: "auto",
             textAlign: "center",
             mb: { xs: 8, md: 10 },
+            mt: 15,
           }}
         >
           <Typography variant="h2">Estate Planning </Typography>

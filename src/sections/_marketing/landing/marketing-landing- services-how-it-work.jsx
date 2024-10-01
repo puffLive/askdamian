@@ -70,7 +70,7 @@ export default function MarketingLandingServicesHowItWork() {
       id="business"
     >
       <Container>
-        <Typography variant="h2" sx={{ textAlign: "center" }}>
+        <Typography variant="h2" sx={{ textAlign: "center", mt: 15 }}>
           For Business Owners
         </Typography>
 

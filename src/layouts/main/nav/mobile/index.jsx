@@ -53,19 +53,21 @@ export default function NavMobile({ data }) {
         <Scrollbar>
           <Logo sx={{ mx: 2.5, my: 3 }} />
 
-          <List component="nav" disablePadding>
+          {/* <List component="nav" disablePadding>
             {data.map((list) => (
               <NavList key={list.title} data={list} />
             ))}
-          </List>
+          </List> */}
 
           <Stack spacing={1.5} sx={{ p: 3 }}>
             <Button
-              component={HashLink}
+              // component={HashLink}
+              href="https://calendly.com/planningwithdamian/30minwithdamian"
+              target="_blank"
               fullWidth
               variant="contained"
               color="inherit"
-              href={paths.services.root}
+              // href={paths.services.root}
               rel="noopener"
               onClick={mobileOpen.onFalse}
               to="#join"
