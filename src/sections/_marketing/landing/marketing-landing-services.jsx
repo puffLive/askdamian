@@ -19,25 +19,25 @@ const COLORS = ["primary", "secondary", "success", "warning"];
 const SERVICES = [
   {
     name: "Family",
-    icon: "/assets/icons/service/ic_service_seo.svg",
+    icon: "/assets/icons/lwa_services/family.svg",
     content: "Preserving your family's wealth is our top priority",
     path: "#family",
   },
   {
     name: "Pension",
-    icon: "/assets/icons/service/ic_service_mail.svg",
+    icon: "/assets/icons/lwa_services/pension.svg",
     content: "Understanding pensions",
     path: "#pension",
   },
   {
     name: "Business",
-    icon: "/assets/icons/service/ic_service_analysis.svg",
+    icon: "/assets/icons/lwa_services/business.svg",
     content: "We understand the unique challenges and opportunities",
     path: "#business",
   },
   {
     name: "Estate Planning ",
-    icon: "/assets/icons/service/ic_service_bullhorn.svg",
+    icon: "/assets/icons/lwa_services/estate_planning.svg",
     content: "In-depth financial planning",
     path: "#financial-planning",
   },
