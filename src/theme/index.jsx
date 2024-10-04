@@ -51,8 +51,6 @@ export default function ThemeProvider({ children }) {
 
   theme.components = componentsOverrides(theme);
 
-  console.log("Theme", theme);
-
   return (
     <MuiThemeProvider theme={theme}>
       <RTL themeDirection={settings.themeDirection}>

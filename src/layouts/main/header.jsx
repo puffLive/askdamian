@@ -1,15 +1,12 @@
 import PropTypes from "prop-types";
 
 import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import { useTheme } from "@mui/material/styles";
-
-import { paths } from "src/routes/paths";
 
 import { useOffSetTop } from "src/hooks/use-off-set-top";
 import { useResponsive } from "src/hooks/use-responsive";
@@ -22,8 +19,6 @@ import NavMobile from "./nav/mobile";
 import NavDesktop from "./nav/desktop";
 import { HEADER } from "../config-layout";
 import { navConfig } from "./config-navigation";
-import HeaderShadow from "../common/header-shadow";
-import { HashLink } from "react-router-hash-link";
 
 // ----------------------------------------------------------------------
 
@@ -36,7 +31,7 @@ export default function Header({ headerOnDark }) {
 
   const renderContent = (
     <>
-      <Box sx={{ lineHeight: 0, position: "relative" }}>
+      <Box sx={{ lineHeight: 5, position: "relative" }}>
         <Logo />
       </Box>
 
@@ -49,7 +44,7 @@ export default function Header({ headerOnDark }) {
             display: { xs: "none", md: "flex" },
           }}
         >
-          {/* <NavDesktop data={navConfig} /> */}
+          <NavDesktop data={navConfig} />
         </Stack>
 
         <Box sx={{ flexGrow: { xs: 1, md: "unset" } }} />
@@ -62,10 +57,8 @@ export default function Header({ headerOnDark }) {
         justifyContent="flex-end"
       >
         <Button
-          // component={HashLink}
           variant="contained"
           // color="secondary"
-          // href={paths.services.root}
           href="https://calendly.com/planningwithdamian/30minwithdamian"
           target="_blank"
           rel="noopener"
@@ -77,8 +70,6 @@ export default function Header({ headerOnDark }) {
               backgroundColor: "primary.light",
             },
           }}
-          // to="#join"
-          smooth
         >
           Free Consultation
         </Button>
@@ -127,8 +118,6 @@ export default function Header({ headerOnDark }) {
           {renderContent}
         </Container>
       </Toolbar>
-
-      {offset && <HeaderShadow />}
     </AppBar>
   );
 }

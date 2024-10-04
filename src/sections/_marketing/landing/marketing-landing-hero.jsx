@@ -41,6 +41,7 @@ export default function MarketingLandingHero() {
           alignItems: { md: "center" },
           height: { md: `100vh` },
         }}
+        id="home"
       >
         <Grid container columnSpacing={{ xs: 0, md: 10 }}>
           <Grid
@@ -78,7 +79,7 @@ export default function MarketingLandingHero() {
                 color="inherit"
                 size="large"
                 // to="#join"
-                smooth
+                // smooth
               >
                 Free Consultation
               </Button>
@@ -89,7 +90,7 @@ export default function MarketingLandingHero() {
                 alignItems="center"
                 sx={{ typography: "h6" }}
                 to="#services"
-                smooth
+                // smooth
               >
                 <Fab size="medium" sx={{ mr: 1 }} color="secondary">
                   <Iconify width={24} icon="carbon:play" />

@@ -7,7 +7,6 @@ import Button from "@mui/material/Button";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 
-import { paths } from "src/routes/paths";
 import { usePathname } from "src/routes/hooks";
 
 import { useBoolean } from "src/hooks/use-boolean";
@@ -18,7 +17,6 @@ import Scrollbar from "src/components/scrollbar";
 
 import NavList from "./nav-list";
 import { NAV } from "../../../config-layout";
-import { HashLink } from "react-router-hash-link";
 
 // ----------------------------------------------------------------------
 
@@ -53,25 +51,26 @@ export default function NavMobile({ data }) {
         <Scrollbar>
           <Logo sx={{ mx: 2.5, my: 3 }} />
 
-          {/* <List component="nav" disablePadding>
+          <List component="nav" disablePadding>
             {data.map((list) => (
-              <NavList key={list.title} data={list} />
+              <NavList
+                key={list.title}
+                data={list}
+                onClick={mobileOpen.onFalse}
+              />
             ))}
-          </List> */}
+          </List>
 
           <Stack spacing={1.5} sx={{ p: 3 }}>
             <Button
-              // component={HashLink}
               href="https://calendly.com/planningwithdamian/30minwithdamian"
               target="_blank"
               fullWidth
               variant="contained"
               color="inherit"
-              // href={paths.services.root}
               rel="noopener"
               onClick={mobileOpen.onFalse}
               to="#join"
-              smooth
             >
               Free Consultation
             </Button>
