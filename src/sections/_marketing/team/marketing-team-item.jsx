@@ -49,6 +49,7 @@ export default function MarketingTeamItem({ member, ...other }) {
         transition={varTranHover()}
         sx={{ position: "relative", borderRadius: 2, overflow: "hidden" }}
       >
+        {/*         
         <StyledOverlay>
           <Stack
             direction="row"
@@ -57,12 +58,13 @@ export default function MarketingTeamItem({ member, ...other }) {
           >
             {_socials.map((social) => (
               <IconButton key={social.value} color="primary">
-                {/* <Iconify icon={social.icon} /> */} // social media icon
+               <Iconify icon={social.icon} />
                 links
               </IconButton>
             ))}
           </Stack>
-        </StyledOverlay>
+        </StyledOverlay> 
+*/}
 
         <m.div variants={varHover(1.15)} transition={varTranHover()}>
           <Image src={photo} alt={name} ratio="3/4" />

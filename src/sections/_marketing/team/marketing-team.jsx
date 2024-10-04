@@ -70,6 +70,7 @@ export default function MarketingTeam({ members }) {
         position: "relative",
         py: { xs: 10, md: 20 },
       }}
+      id="advisor"
     >
       <Container
         sx={{
@@ -78,6 +79,7 @@ export default function MarketingTeam({ members }) {
           mb: { xs: 8, md: 0 },
           position: { xs: "relative", md: "absolute" },
           height: { md: "calc(100% - 320px)" },
+          mt: 10,
         }}
       >
         <Grid container spacing={3} justifyContent="space-between">
