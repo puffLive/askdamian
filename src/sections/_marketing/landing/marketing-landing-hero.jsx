@@ -23,6 +23,14 @@ export default function MarketingLandingHero() {
 
   const mdUp = useResponsive("up", "md");
 
+  const heroImages = [
+    "/assets/legacy-images/lwa-hands.jpg",
+    "/assets/legacy-images/lwa-family_on_beach.jpg",
+    "/assets/legacy-images/lwa-elephants.jpg",
+  ];
+
+  const randomImage = heroImages[Math.floor(Math.random() * heroImages.length)];
+
   return (
     <Box
       sx={{
@@ -90,7 +98,7 @@ export default function MarketingLandingHero() {
                 alignItems="center"
                 sx={{ typography: "h6" }}
                 to="#services"
-                // smooth
+                smooth
               >
                 <Fab size="medium" sx={{ mr: 1 }} color="secondary">
                   <Iconify width={24} icon="carbon:play" />
@@ -106,7 +114,7 @@ export default function MarketingLandingHero() {
                 visibleByDefault
                 disabledEffect
                 alt="marketing market"
-                src="/assets/illustrations/illustration_marketing_market.svg"
+                src={randomImage}
               />
             </Grid>
           )}
