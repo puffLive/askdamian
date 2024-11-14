@@ -81,7 +81,7 @@ export default function MarketingLandingHero() {
                 // to="#join"
                 // smooth
               >
-                Free Consultation
+                Free Planning Session
               </Button>
 
               <Stack

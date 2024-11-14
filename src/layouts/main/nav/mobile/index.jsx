@@ -72,7 +72,7 @@ export default function NavMobile({ data }) {
               onClick={mobileOpen.onFalse}
               to="#join"
             >
-              Free Consultation
+              Free Planning Session
             </Button>
           </Stack>
         </Scrollbar>

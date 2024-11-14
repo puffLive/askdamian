@@ -71,7 +71,7 @@ export default function Header({ headerOnDark }) {
             },
           }}
         >
-          Free Consultation
+          Free Planning Session
         </Button>
       </Stack>
 
