@@ -6,5 +6,5 @@ export const navConfig = [
     title: "Services",
     path: "#services",
   },
-  { title: "Your Advisor", path: "#advisor" },
+  { title: "About US", path: "#advisor" },
 ];
