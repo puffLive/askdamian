@@ -13,6 +13,8 @@ import ProgressBar from "src/components/progress-bar";
 import { MotionLazy } from "src/components/animate/motion-lazy";
 import { SettingsDrawer, SettingsProvider } from "src/components/settings";
 
+import { Analytics } from "@vercel/analytics/react";
+
 // ----------------------------------------------------------------------
 
 export default function App() {
@@ -20,6 +22,7 @@ export default function App() {
 
   return (
     <LocalizationProvider>
+      <Analytics />
       <SettingsProvider
         defaultSettings={{
           themeMode: "light", // 'light' | 'dark'
