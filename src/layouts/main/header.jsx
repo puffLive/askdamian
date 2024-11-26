@@ -58,7 +58,7 @@ export default function Header({ headerOnDark }) {
       >
         <Button
           variant="contained"
-          // color="secondary"
+          color="secondary"
           href="https://calendly.com/planningwithdamian/30minwithdamian"
           target="_blank"
           rel="noopener"

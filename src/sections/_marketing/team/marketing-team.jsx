@@ -83,25 +83,27 @@ export default function MarketingTeam({ members }) {
         }}
       >
         <Grid container spacing={3} justifyContent="space-between">
-          <Grid xs={12} md={4}>
+          <Grid xs={12} md={5}>
             <Stack
-              spacing={3}
+              marginTop={-6}
+              spacing={2}
               sx={{ textAlign: { xs: "center", md: "unset" } }}
             >
-              {/* <Typography variant="overline" sx={{ color: "grey.600" }}>
-                Team
-              </Typography> */}
-
-              <Typography variant="h2" sx={{ color: "primary.main" }}>
-                Get to know your financial advisor
+              <Typography variant="h3" sx={{ color: "primary.main" }}>
+                Meet Your Wealth Management Advisor
               </Typography>
 
               <Typography sx={{ color: "common.white" }}>
-                I am a licensed Financial Advisor with over two decades of
-                experience. I offer personalized financial plans tailored to
-                your goals, whether buying your first home or planning
-                retirement. We'll continually review and adjust your plan to
-                ensure it meets your evolving needs and aspirations.
+                Damian Alexander, a licensed Wealth Management Advisor and
+                Chartered Life Underwriter (CLU), has over 20 years of
+                experience helping individuals and businesses achieve financial
+                success. Specializing in tax planning, retirement, pensions, and
+                estate strategies, Damian creates personalized financial
+                strategies tailored to evolving needs. Inspired by finance at
+                age 12, hes passionate about simplifying financial planning. A
+                proud board member, Damian also enjoys boxing, salsa dancing,
+                running, and more. Partner with him for expert guidance on your
+                financial journey.
               </Typography>
             </Stack>
           </Grid>
@@ -110,23 +112,6 @@ export default function MarketingTeam({ members }) {
             <Box ref={containerRef} />
           </Grid>
         </Grid>
-
-        {/* {mdUp && (
-          <CarouselArrows
-            spacing={2}
-            onNext={carousel.onNext}
-            onPrev={carousel.onPrev}
-            leftButtonProps={{
-              color: "primary",
-              sx: { color: "primary.main", opacity: 1 },
-            }}
-            rightButtonProps={{
-              color: "primary",
-              sx: { color: "primary.main", opacity: 1 },
-            }}
-            sx={{ position: "absolute", bottom: 0 }}
-          />
-        )} */}
       </Container>
 
       <Box
