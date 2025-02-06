@@ -23,6 +23,27 @@ export default function MarketingLandingHero() {
 
   const mdUp = useResponsive("up", "md");
 
+  const heroImages = [
+    {
+      url: "/assets/legacy-images/lwa-elephant-herd.jpg",
+      description: "elephant herd",
+    },
+    {
+      url: "/assets/legacy-images/lwa-multigenerational-people-hugging.jpg",
+      description: "Multi-generational people hugging",
+    },
+    {
+      url: "/assets/legacy-images/lwa-palms-of-the-father-and-mother.jpg",
+      description: "Father and mother's hands holding babys feet",
+    },
+    {
+      url: "/assets/legacy-images/lwa-senior-couple-holding-hands.jpg",
+      description: "Senior couple holding hands on the beach",
+    },
+  ];
+
+  const randomImage = heroImages[Math.floor(Math.random() * heroImages.length)];
+
   return (
     <Box
       sx={{
@@ -81,7 +102,7 @@ export default function MarketingLandingHero() {
                 // to="#join"
                 // smooth
               >
-                Free Planning Session
+                Free Consultation
               </Button>
 
               <Stack
@@ -90,7 +111,7 @@ export default function MarketingLandingHero() {
                 alignItems="center"
                 sx={{ typography: "h6" }}
                 to="#services"
-                // smooth
+                smooth
               >
                 <Fab size="medium" sx={{ mr: 1 }} color="secondary">
                   <Iconify width={24} icon="carbon:play" />
@@ -102,11 +123,20 @@ export default function MarketingLandingHero() {
 
           {mdUp && (
             <Grid xs={12} md={6} lg={7}>
-              <Image
-                visibleByDefault
-                disabledEffect
-                alt="marketing market"
-                src="/assets/illustrations/illustration_marketing_market.svg"
+              <Box
+                component="img"
+                src={randomImage.url}
+                alt={randomImage.description}
+                // visibleByDefault
+                // disabledEffect
+                sx={{
+                  width: "100%",
+                  height: "auto",
+                  maskImage: `linear-gradient(to top, transparent, black 15%),linear-gradient(to bottom, transparent, black 15%),linear-gradient(to left, transparent, black 15%),linear-gradient(to right, transparent, black 15%)`,
+                  WebkitMaskImage: `linear-gradient(to top, transparent, black 15%),linear-gradient(to bottom, transparent, black 15%),linear-gradient(to left, transparent, black 15%),linear-gradient(to right, transparent, black 15%)`,
+                  maskComposite: "destination-in",
+                  WebkitMaskComposite: "destination-in",
+                }}
               />
             </Grid>
           )}
