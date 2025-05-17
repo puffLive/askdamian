@@ -67,7 +67,8 @@ export default function Header({ headerOnDark }) {
             backgroundColor: "primary.lighter",
             color: "grey.700",
             "&:hover": {
-              backgroundColor: "primary.light",
+              backgroundColor: "warning.lighter",
+              color: "grey.800",
             },
           }}
         >
