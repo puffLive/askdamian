@@ -99,7 +99,7 @@ export default function MarketingTeam({ members }) {
                 individuals and businesses achieve financial success.
                 Specializing in tax planning, retirement, pensions, and estate
                 strategies, Damian creates personalized financial strategies
-                tailored to evolving needs. Inspired by finance at age 12, hes
+                tailored to evolving needs. Inspired by finance at age 12, he's
                 passionate about simplifying financial planning. A proud board
                 member, Damian also enjoys boxing, salsa dancing, running, and
                 more. Partner with him for expert guidance on your financial
