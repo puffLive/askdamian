@@ -6,6 +6,8 @@ import Container from "@mui/material/Container";
 import SvgColor from "src/components/svg-color";
 import Carousel, { useCarousel } from "src/components/carousel";
 
+import { Divider, Typography } from "@mui/material";
+
 // ----------------------------------------------------------------------
 
 export default function MarketingOurClients({ brands }) {
@@ -36,6 +38,11 @@ export default function MarketingOurClients({ brands }) {
         pt: { xs: 5, md: 10 },
       }}
     >
+      <Divider>
+        <Typography variant="body1" sx={{ color: "text.disabled" }}>
+          Our Partners
+        </Typography>
+      </Divider>
       <Carousel {...carousel.carouselSettings}>
         {brands.map((brand) => (
           <SvgColor
