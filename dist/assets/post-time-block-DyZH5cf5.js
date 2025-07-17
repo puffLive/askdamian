@@ -1,0 +1,2 @@
+import{j as r,S as t,B as o,P as s}from"./mui-CqCkJPsl.js";import{f as e}from"./format-time-Vs1SQ_1M.js";function a({createdAt:s,duration:a,sx:i,...n}){return r.jsxs(t,{flexWrap:"wrap",direction:"row",alignItems:"center",sx:{typography:"caption",color:"text.disabled",...i},...n,children:[e(s),a&&r.jsxs(r.Fragment,{children:[r.jsx(o,{component:"span",sx:{mx:1,width:4,height:4,borderRadius:"50%",backgroundColor:"currentColor"}}),a]})]})}a.propTypes={createdAt:s.string,duration:s.string,sx:s.object};export{a as P};
+//# sourceMappingURL=post-time-block-DyZH5cf5.js.map

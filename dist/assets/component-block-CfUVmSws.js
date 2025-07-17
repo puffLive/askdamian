@@ -1,0 +1,2 @@
+import{j as e,y as t,c as r,bl as s,S as i,P as n}from"./mui-CqCkJPsl.js";function a({title:n,sx:a,children:o,...l}){return e.jsxs(t,{variant:"outlined",sx:{borderRadius:1.5,borderStyle:"dashed",bgcolor:e=>r(e.palette.grey[500],.04)},children:[n&&e.jsx(s,{title:n}),e.jsx(i,{spacing:3,direction:"row",alignItems:"center",justifyContent:"center",flexWrap:"wrap",sx:{p:5,minHeight:180,...a},...l,children:o})]})}a.propTypes={children:n.node,sx:n.object,title:n.string};export{a as C};
+//# sourceMappingURL=component-block-CfUVmSws.js.map

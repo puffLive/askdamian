@@ -1,0 +1,2 @@
+import{j as r,B as o,P as s}from"./mui-CqCkJPsl.js";import{a as e}from"./vendor-Dm0w3PnF.js";const a=e.forwardRef(({src:s,sx:e,...a},n)=>r.jsx(o,{component:"span",className:"svg-color",ref:n,sx:{width:24,height:24,display:"inline-block",bgcolor:"currentColor",mask:`url(${s}) no-repeat center / contain`,WebkitMask:`url(${s}) no-repeat center / contain`,...e},...a}));a.propTypes={src:s.string,sx:s.object};export{a as S};
+//# sourceMappingURL=svg-color-DaNlnW5W.js.map

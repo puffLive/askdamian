@@ -1,0 +1,2 @@
+import{j as s,B as r,as as a,at as t}from"./mui-CqCkJPsl.js";import{u as n,a as o}from"./index-DMSkN1Nr.js";function e(){const e=n("down","md");return s.jsx(s.Fragment,{children:e&&s.jsx(r,{sx:{px:2,pb:3},children:s.jsx(a,{fullWidth:!0,hiddenLabel:!0,placeholder:"Search...",InputProps:{startAdornment:s.jsx(t,{position:"start",children:s.jsx(o,{icon:"carbon:search",width:24,sx:{color:"text.disabled"}})})}})})})}export{e as P};
+//# sourceMappingURL=post-search-mobile-DiF-oF1p.js.map
