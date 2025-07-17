@@ -1,0 +1,2 @@
+import{j as e,S as r,B as t,P as o}from"./mui-CqCkJPsl.js";import{a as i}from"./format-number-B0sHI6WD.js";function s({price:o,priceSale:s=0,sx:n,...a}){return e.jsxs(r,{direction:"row",sx:{typography:"subtitle2",...n},...a,children:[i(o),e.jsx(t,{component:"span",sx:{ml:.5,color:"text.disabled",textDecoration:"line-through",fontWeight:"fontWeightMedium"},children:s>0&&i(s)})]})}s.propTypes={price:o.number,priceSale:o.number,sx:o.object};export{s as P};
+//# sourceMappingURL=product-price-DiP5l9f-.js.map

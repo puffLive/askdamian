@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm audit:*)",
+      "Bash(find:*)",
+      "Bash(npm run build:*)",
+      "Bash(ls:*)",
+      "Bash(npx vite-bundle-analyzer:*)",
+      "Bash(npm install:*)",
+      "Bash(pkill:*)",
+      "Bash(npm run lint)",
+      "Bash(npx eslint:*)",
+      "Bash(rm:*)",
+      "Bash(node:*)",
+      "Bash(sips:*)",
+      "Bash(cp:*)"
+    ],
+    "deny": []
+  }
+}
