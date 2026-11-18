@@ -1,0 +1,53 @@
+name: Daily blog publish
+
+# Articles merged into main with a future `date` stay hidden until a build runs
+# on or after that date. This job runs every morning and, when an article is
+# due, asks Vercel to rebuild production from main.
+#
+# It only publishes content that has already been reviewed and merged through
+# a pull request. It never changes code or content itself.
+#
+# Setup: add a Vercel Deploy Hook for the main branch and save its URL as the
+# repository secret VERCEL_DEPLOY_HOOK_URL.
+
+on:
+  schedule:
+    # 11:00 UTC = 6:00 AM Toronto (EST) / 7:00 AM (EDT)
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Deploy even if no article is due today"
+        type: boolean
+        default: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Find articles due today
+        id: check
+        run: node scripts/blog/check.mjs --due
+
+      - name: Trigger production deploy
+        if: steps.check.outputs.due == 'true' || inputs.force == true
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$HOOK" ]; then
+            echo "::error::VERCEL_DEPLOY_HOOK_URL secret is not set, so nothing was deployed."
+            exit 1
+          fi
+          curl --fail --silent --show-error -X POST "$HOOK"
+          echo "Production deploy triggered."

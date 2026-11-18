@@ -12,14 +12,14 @@ import { HashLink } from "react-router-hash-link";
 
 // ----------------------------------------------------------------------
 
-const NavItem = forwardRef(({ title, path, ...other }, ref) => {
+const NavItem = forwardRef(({ title, path, active, ...other }, ref) => {
   const renderContent = (
     <StyledNavItem
       disableRipple
       disableTouchRipple
       ref={ref}
       // open={open}
-      // active={active}
+      active={active}
       // subItem={subItem}
       {...other}
     >

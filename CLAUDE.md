@@ -13,6 +13,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `npm run build` - Create production build for deployment
 - `npm run re:build` - Clean install dependencies and build
 
+### Blog
+- `npm run blog:check` - Validate articles in `src/content/blog` and list live, scheduled and draft posts
+- See `docs/blog-publishing.md` for adding, scheduling, editing and unpublishing articles
+
 ### Code Quality
 - `npm run lint` - Run ESLint on src directory
 - `npm run lint:fix` - Auto-fix ESLint issues

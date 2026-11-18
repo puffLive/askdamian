@@ -19,6 +19,8 @@ import { componentsRoutes } from "./components";
 
 const IndexPage = lazy(() => import("src/pages/home"));
 const SupportPage = lazy(() => import("src/pages/support"));
+const BlogPostsPage = lazy(() => import("src/pages/blog/posts"));
+const BlogPostPage = lazy(() => import("src/pages/blog/post"));
 
 // ----------------------------------------------------------------------
 
@@ -45,6 +47,24 @@ export default function Router() {
           element: (
             <MainLayout>
               <SupportPage />
+            </MainLayout>
+          ),
+        },
+
+        {
+          path: "blog",
+          element: (
+            <MainLayout>
+              <BlogPostsPage />
+            </MainLayout>
+          ),
+        },
+
+        {
+          path: "blog/:slug",
+          element: (
+            <MainLayout>
+              <BlogPostPage />
             </MainLayout>
           ),
         },

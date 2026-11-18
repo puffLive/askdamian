@@ -21,6 +21,7 @@ import Image from "src/components/image";
 
 import NavItem from "./nav-item";
 import { HashLink } from "react-router-hash-link";
+import { isNavItemActive } from "../../config-navigation";
 
 // ----------------------------------------------------------------------
 
@@ -34,6 +35,8 @@ export default function NavList({ data }) {
       component={HashLink}
       to={data.path}
       smooth
+      active={isNavItemActive(data.path, pathname)}
+      aria-current={isNavItemActive(data.path, pathname) ? "page" : undefined}
     />
   );
 }
