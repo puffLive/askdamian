@@ -9,7 +9,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { marked } from 'marked';
 
-export const SITE_URL = 'https://legacywealthadvisory.ca';
+export const SITE_URL = 'https://www.legacywealthadvisory.ca';
 export const SITE_NAME = 'Legacy Wealth Advisory';
 export const BLOG_TIME_ZONE = 'America/Toronto';
 export const CONTENT_DIR = path.resolve(process.cwd(), 'src/content/blog');

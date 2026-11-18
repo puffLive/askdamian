@@ -1,6 +1,6 @@
 // Settings shared by the blog pages.
 
-export const SITE_URL = "https://legacywealthadvisory.ca";
+export const SITE_URL = "https://www.legacywealthadvisory.ca";
 export const SITE_NAME = "Legacy Wealth Advisory";
 
 export const BLOG_TITLE = "Financial Planning Insights";

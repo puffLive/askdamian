@@ -38,7 +38,7 @@ React page or a navigation change.
    validates every article and builds the site; Vercel posts a preview link.
 3. The owner approves the pull request and merges it into `main`.
 4. Vercel deploys `main` to production. Confirm the article at
-   `https://legacywealthadvisory.ca/blog/<slug>`.
+   `https://www.legacywealthadvisory.ca/blog/<slug>`.
 
 ## Schedule an article
 
