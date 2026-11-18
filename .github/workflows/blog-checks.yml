@@ -1,0 +1,29 @@
+name: Blog checks
+
+# Runs on every pull request so new or edited articles are validated and the
+# site is built before anything is merged into main.
+on:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Validate blog articles
+        run: npm run blog:check
+
+      - name: Lint blog code
+        run: npx eslint --ext .js,.jsx src/sections/blog/lwa src/pages/blog
+
+      - name: Build the site
+        run: npm run build
